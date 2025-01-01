@@ -1,0 +1,6 @@
+Model,Features,R²,MSE,Accuracy (%),OOB Error Rate (%)
+Linear Regression (Dep),Departure Delay,0.834,329.71,N/A,N/A
+Linear Regression (Visib),Visibility,0.0057,1990.97,N/A,N/A
+Linear Regression (Wind),Wind Gust,0.00197,2009.79,N/A,N/A
+Linear Regression (Press),Pressure,0.0117,1743.12,N/A,N/A
+Random Forest,"Dep. Delay, Visib, Wind, Pressure",N/A,N/A,76.72,22.85
