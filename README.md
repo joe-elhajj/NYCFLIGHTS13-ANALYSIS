@@ -6,12 +6,27 @@ Flight delays affect millions of passengers annually, leading to lost time and i
 ---
 
 ## Data
-- **Source**: The `NYCFLIGHTS13` package, which includes flights and weather data for New York airports in 2013.
+- **Source**: The `NYCFLIGHTS13` R package, which includes flights and weather data for New York airports in 2013. The nycflights13 dataset contains information on all domestic flights departing from three major New York City airports in the year 2013.
 - **Datasets Used**:
   - **Flights**: 336,776 rows and 19 features (e.g., departure delay, arrival delay, flight origin).
   - **Weather**: Hourly meteorological data for New York airports.
 
 The datasets were joined on common features like `year`, `month`, `day`, `hour`, and `origin`.
+
+### Key Sources of the Data
+#### Flight Data
+- Collected from the **Bureau of Transportation Statistics (BTS)**.
+- Includes details about flights such as departure and arrival times, delays, airlines, and flight numbers.
+
+#### Weather Data
+- Sourced from the **National Oceanic and Atmospheric Administration (NOAA)**.
+- Provides hourly weather observations for the New York City airports.
+
+#### Airports Data
+- Includes metadata about airports (e.g., name, location) from the **Federal Aviation Administration (FAA)**.
+
+#### Airlines Data
+- Provides information about airlines (e.g., carrier codes and names).
 
 ---
 
@@ -28,7 +43,7 @@ The datasets were joined on common features like `year`, `month`, `day`, `hour`,
 ## Key Findings
 1. **Regression Results**:
    - Departure delay is the most significant predictor of arrival delay ( R^2 = 0.834 ).
-   - Weather features (pressure, visibility, wind gust) have weak correlations with arrival delay.
+   - Weather features (pressure, visibility, wind gust) have weak correlations with arrival delay but this may be due to lack of information on cancelled flights.
 2. **Random Forest Classification**:
    - Accuracy: 76.72%
    - Feature Importance:
