@@ -95,4 +95,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Contact
 For questions or collaboration, feel free to reach out to:
 - Email: joeelhajj01@icloud.com
-- LinkedIn: joeelhajj
+- LinkedIn: [joeelhajj](https://www.linkedin.com/in/joe-el-hajj-443518301/)
